@@ -20,7 +20,65 @@
 		18B28D6826221C2B00C1F284 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D6726221C2B00C1F284 /* ErrorView.swift */; };
 		18B28D6B262223BC00C1F284 /* DogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D6A262223BC00C1F284 /* DogResponse.swift */; };
 		18B28D70262228D100C1F284 /* DogItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D6F262228D100C1F284 /* DogItemView.swift */; };
+		18B28D7E262244C800C1F284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B28D7D262244C800C1F284 /* Assets.xcassets */; };
+		18B28D85262244C800C1F284 /* tiny Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18B28D84262244C800C1F284 /* tiny Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18B28D8A262244C800C1F284 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D89262244C800C1F284 /* ContentView.swift */; };
+		18B28D8E262244C800C1F284 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D8D262244C800C1F284 /* ComplicationController.swift */; };
+		18B28D90262244C900C1F284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B28D8F262244C900C1F284 /* Assets.xcassets */; };
+		18B28D93262244C900C1F284 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B28D92262244C900C1F284 /* Preview Assets.xcassets */; };
+		18B28D97262244C900C1F284 /* tiny.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 18B28D7B262244C500C1F284 /* tiny.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18B28DA626224A3B00C1F284 /* DogResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D6A262223BC00C1F284 /* DogResponse.swift */; };
+		18B28DA726224A3B00C1F284 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D5D2622168F00C1F284 /* ResultState.swift */; };
+		18B28DA826224A3B00C1F284 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D542622000100C1F284 /* UserEndpoint.swift */; };
+		18B28DA926224A3B00C1F284 /* pawsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F969A26219E7100E606A6 /* pawsApp.swift */; };
+		18B28DAA26224A3B00C1F284 /* UsersViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D602622176E00C1F284 /* UsersViewmodel.swift */; };
+		18B28DAB26224A3B00C1F284 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D58262201A900C1F284 /* APIError.swift */; };
+		18B28DAC26224A3B00C1F284 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D492621FF2100C1F284 /* UserService.swift */; };
+		18B28DB226224B2700C1F284 /* DogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28DB126224B2700C1F284 /* DogItem.swift */; };
+		18B28DB826224E9100C1F284 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 18B28DB726224E9100C1F284 /* URLImage */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B28D86262244C800C1F284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187F968F26219E7100E606A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B28D83262244C800C1F284;
+			remoteInfo = "tiny Extension";
+		};
+		18B28D95262244C900C1F284 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187F968F26219E7100E606A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B28D7A262244C500C1F284;
+			remoteInfo = tiny;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18B28D9B262244C900C1F284 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18B28D85262244C800C1F284 /* tiny Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B28D9F262244C900C1F284 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				18B28D97262244C900C1F284 /* tiny.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		187F969726219E7100E606A6 /* paws.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paws.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +95,16 @@
 		18B28D6726221C2B00C1F284 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		18B28D6A262223BC00C1F284 /* DogResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogResponse.swift; sourceTree = "<group>"; };
 		18B28D6F262228D100C1F284 /* DogItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItemView.swift; sourceTree = "<group>"; };
+		18B28D7B262244C500C1F284 /* tiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B28D7D262244C800C1F284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B28D7F262244C800C1F284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B28D84262244C800C1F284 /* tiny Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tiny Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B28D89262244C800C1F284 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18B28D8D262244C800C1F284 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		18B28D8F262244C900C1F284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B28D92262244C900C1F284 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18B28D94262244C900C1F284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B28DB126224B2700C1F284 /* DogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +116,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18B28D81262244C800C1F284 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B28DB826224E9100C1F284 /* URLImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,7 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				187F969926219E7100E606A6 /* paws */,
+				18B28D7C262244C500C1F284 /* tiny */,
+				18B28D88262244C800C1F284 /* tiny Extension */,
 				187F969826219E7100E606A6 /* Products */,
+				18B28DB626224E9100C1F284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				187F969726219E7100E606A6 /* paws.app */,
+				18B28D7B262244C500C1F284 /* tiny.app */,
+				18B28D84262244C800C1F284 /* tiny Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +224,51 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		18B28D7C262244C500C1F284 /* tiny */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D7D262244C800C1F284 /* Assets.xcassets */,
+				18B28D7F262244C800C1F284 /* Info.plist */,
+			);
+			path = tiny;
+			sourceTree = "<group>";
+		};
+		18B28D88262244C800C1F284 /* tiny Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18B28DB026224B0900C1F284 /* View */,
+				18B28D89262244C800C1F284 /* ContentView.swift */,
+				18B28D8D262244C800C1F284 /* ComplicationController.swift */,
+				18B28D8F262244C900C1F284 /* Assets.xcassets */,
+				18B28D94262244C900C1F284 /* Info.plist */,
+				18B28D91262244C900C1F284 /* Preview Content */,
+			);
+			path = "tiny Extension";
+			sourceTree = "<group>";
+		};
+		18B28D91262244C900C1F284 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D92262244C900C1F284 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18B28DB026224B0900C1F284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B28DB126224B2700C1F284 /* DogItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B28DB626224E9100C1F284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,10 +279,12 @@
 				187F969326219E7100E606A6 /* Sources */,
 				187F969426219E7100E606A6 /* Frameworks */,
 				187F969526219E7100E606A6 /* Resources */,
+				18B28D9F262244C900C1F284 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18B28D96262244C900C1F284 /* PBXTargetDependency */,
 			);
 			name = paws;
 			packageProductDependencies = (
@@ -165,6 +293,43 @@
 			productName = paws;
 			productReference = 187F969726219E7100E606A6 /* paws.app */;
 			productType = "com.apple.product-type.application";
+		};
+		18B28D7A262244C500C1F284 /* tiny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B28D9C262244C900C1F284 /* Build configuration list for PBXNativeTarget "tiny" */;
+			buildPhases = (
+				18B28D79262244C500C1F284 /* Resources */,
+				18B28D9B262244C900C1F284 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B28D87262244C800C1F284 /* PBXTargetDependency */,
+			);
+			name = tiny;
+			productName = tiny;
+			productReference = 18B28D7B262244C500C1F284 /* tiny.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		18B28D83262244C800C1F284 /* tiny Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B28D98262244C900C1F284 /* Build configuration list for PBXNativeTarget "tiny Extension" */;
+			buildPhases = (
+				18B28D80262244C800C1F284 /* Sources */,
+				18B28D81262244C800C1F284 /* Frameworks */,
+				18B28D82262244C800C1F284 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tiny Extension";
+			packageProductDependencies = (
+				18B28DB726224E9100C1F284 /* URLImage */,
+			);
+			productName = "tiny Extension";
+			productReference = 18B28D84262244C800C1F284 /* tiny Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,6 +341,12 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					187F969626219E7100E606A6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					18B28D7A262244C500C1F284 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					18B28D83262244C800C1F284 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -197,6 +368,8 @@
 			projectRoot = "";
 			targets = (
 				187F969626219E7100E606A6 /* paws */,
+				18B28D7A262244C500C1F284 /* tiny */,
+				18B28D83262244C800C1F284 /* tiny Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +381,23 @@
 			files = (
 				187F96A226219E7300E606A6 /* Preview Assets.xcassets in Resources */,
 				187F969F26219E7300E606A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B28D79262244C500C1F284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B28D7E262244C800C1F284 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B28D82262244C800C1F284 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B28D93262244C900C1F284 /* Preview Assets.xcassets in Resources */,
+				18B28D90262244C900C1F284 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +421,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18B28D80262244C800C1F284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B28DAA26224A3B00C1F284 /* UsersViewmodel.swift in Sources */,
+				18B28DA826224A3B00C1F284 /* UserEndpoint.swift in Sources */,
+				18B28DAC26224A3B00C1F284 /* UserService.swift in Sources */,
+				18B28DA726224A3B00C1F284 /* ResultState.swift in Sources */,
+				18B28DA926224A3B00C1F284 /* pawsApp.swift in Sources */,
+				18B28D8A262244C800C1F284 /* ContentView.swift in Sources */,
+				18B28DAB26224A3B00C1F284 /* APIError.swift in Sources */,
+				18B28DA626224A3B00C1F284 /* DogResponse.swift in Sources */,
+				18B28D8E262244C800C1F284 /* ComplicationController.swift in Sources */,
+				18B28DB226224B2700C1F284 /* DogItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B28D87262244C800C1F284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B28D83262244C800C1F284 /* tiny Extension */;
+			targetProxy = 18B28D86262244C800C1F284 /* PBXContainerItemProxy */;
+		};
+		18B28D96262244C900C1F284 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B28D7A262244C500C1F284 /* tiny */;
+			targetProxy = 18B28D95262244C900C1F284 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		187F96A426219E7300E606A6 /* Debug */ = {
@@ -394,6 +614,94 @@
 			};
 			name = Release;
 		};
+		18B28D99262244C900C1F284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tiny Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 59967Z5M82;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tiny Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elixer.paws.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		18B28D9A262244C900C1F284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"tiny Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 59967Z5M82;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "tiny Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elixer.paws.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		18B28D9D262244C900C1F284 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59967Z5M82;
+				IBSC_MODULE = tiny_Extension;
+				INFOPLIST_FILE = tiny/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elixer.paws.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		18B28D9E262244C900C1F284 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59967Z5M82;
+				IBSC_MODULE = tiny_Extension;
+				INFOPLIST_FILE = tiny/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elixer.paws.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +723,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		18B28D98262244C900C1F284 /* Build configuration list for PBXNativeTarget "tiny Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B28D99262244C900C1F284 /* Debug */,
+				18B28D9A262244C900C1F284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B28D9C262244C900C1F284 /* Build configuration list for PBXNativeTarget "tiny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B28D9D262244C900C1F284 /* Debug */,
+				18B28D9E262244C900C1F284 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -430,6 +756,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		18B28D6426221BBD00C1F284 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B28D6326221BBD00C1F284 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		18B28DB726224E9100C1F284 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 18B28D6326221BBD00C1F284 /* XCRemoteSwiftPackageReference "url-image" */;
 			productName = URLImage;
