@@ -25,20 +25,21 @@ struct ErrorView: View {
         VStack{
             Image(systemName: "exclamationmark.icloud.fill")
                 .foregroundColor(.gray)
-                .font(.system(size: 50, weight: .heavy))
+                .font(.system(size: 30, weight: .heavy))
                 .padding(.bottom, 4)
             Text("Oops")
-                .font(.system(size: 50, weight: .medium))
+                .font(.system(size: 20, weight: .medium))
             Text(error.localizedDescription)
                 .foregroundColor(.gray)
                 .font(.system(size: 15, weight: .medium))
+                .padding(.bottom, 20)
             Button (action : {
                 handler()
             },label :{Text("Retry")})
-            .padding(15)
+            .padding(12)
             .background(Color.blue)
             .foregroundColor(Color.white)
-            .font(.system(size: 20, weight: .heavy))
+            .font(.system(size: 15, weight: .heavy))
             .cornerRadius(10.0)
             
         }

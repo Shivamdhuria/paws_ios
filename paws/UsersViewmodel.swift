@@ -12,7 +12,8 @@ class UsersViewmodel: ObservableObject {
     
     private let service : UserService
     
-    private(set) var users = [User]()
+//    private(set) var users = [User]()
+    private(set) var dogUrls = [String]()
     
     private var cancellables = Set<AnyCancellable>()
     //injecting service
@@ -22,7 +23,7 @@ class UsersViewmodel: ObservableObject {
     
     @Published private(set) var state: ResultState = .loading
     
-    func getArticles() {
+    func getDogs() {
         self.state = .loading
         let cancellable = service
             .request(from: .getUsers)
@@ -30,7 +31,7 @@ class UsersViewmodel: ObservableObject {
                 switch res {
                 
                 case .finished:
-                    self.state = .success(content: self.users)
+                    self.state = .success(content: self.dogUrls)
                     break
                     
                 case .failure(let error):
@@ -39,7 +40,9 @@ class UsersViewmodel: ObservableObject {
                 }
             }
             receiveValue: { users in
-                self.users = users
+                let oldData = self.dogUrls
+                self.dogUrls = oldData + users.message
+//                self.dogUrls = users.message
             }
         //To keep hold of the request
         self.cancellables.insert(cancellable)

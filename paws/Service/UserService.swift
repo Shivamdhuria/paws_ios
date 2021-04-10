@@ -9,24 +9,24 @@ import Foundation
 import Combine
 
 protocol UserService {
-    func request(from endpoint : UserAPI) -> AnyPublisher<[User], APIError>
+    func request(from endpoint : UserAPI) -> AnyPublisher<DogResponse, APIError>
 }
 
 struct UserServiceImpl: UserService {
     
-    func request(from endpoint: UserAPI) -> AnyPublisher<[User], APIError> {
+    func request(from endpoint: UserAPI) -> AnyPublisher<DogResponse, APIError> {
         return URLSession
             .shared
             .dataTaskPublisher(for: endpoint.urlRequest)
             .receive(on: DispatchQueue.main)
             .mapError{_ in APIError.unknown}
-            .flatMap{ data, response -> AnyPublisher<[User], APIError> in
+            .flatMap{ data, response -> AnyPublisher<DogResponse, APIError> in
                 guard let response = response as? HTTPURLResponse else {
                     return Fail(error : APIError.unknown).eraseToAnyPublisher()
                 }
                 if (200 ... 299).contains(response.statusCode){
                     return Just(data)
-                        .decode(type: [User].self, decoder: JSONDecoder())
+                        .decode(type: DogResponse.self, decoder: JSONDecoder())
                         .mapError{_ in APIError.decodingError}
                         .eraseToAnyPublisher()
                     

@@ -13,38 +13,31 @@ struct ContentView: View {
     
     var body: some View {
         
-        Group{
-            
-            switch viewModel.state {
-            
-            case .loading: ProgressView()
-                
-            case .failed(let error):ErrorView(error: error, handler: viewModel.getArticles)
-                
-            case .success(let users):
-                NavigationView {
-                    List(users) { user in
-                        Text(user.name)
-                    }.navigationBarTitle("Users")
-                }
+        VStack{
+            NavigationView {
+                List(viewModel.dogUrls, id: \.self) { user in
+                    DogItemView(imageUrl: user).padding(.bottom, 20)
+                }.navigationBarTitle("Dogs")
                 
             }
             
-            }.onAppear(perform: viewModel.getArticles)
-            //        NavigationView {
-            //            List(viewModel.users) { user in
-            //                Text(user.name)
-            //            }.navigationBarTitle("Users")
-            //                .onAppear {
-            //
-            //            }
-            //        }
-        }
-        
+            switch viewModel.state {
+            case .loading: ProgressView()
+            case .failed(let error):ErrorView(error: error, handler: viewModel.getDogs)
+            case .success(_):
+                
+                    Spacer()
+                    Button (action : viewModel.getDogs ,label :{Text("Load more ")})
+                
+            }
+        }.onAppear(perform: viewModel.getDogs)
     }
     
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+    
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
+}

@@ -22,12 +22,12 @@ extension UserAPI:APIBuilder{
     var baseUrl: URL {
         switch self {
         case .getUsers:
-            return URL(string: "https://jsonplaceholder.typicode.com")!
+            return URL(string: "https://dog.ceo/api")!
         }
     }
     
     var path: String {
-        return "/users"
+        return "/breeds/image/random/6"
     }
     
     var urlRequest: URLRequest {
