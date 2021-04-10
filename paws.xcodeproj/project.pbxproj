@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,19 @@
 		187F969D26219E7100E606A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F969C26219E7100E606A6 /* ContentView.swift */; };
 		187F969F26219E7300E606A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187F969E26219E7300E606A6 /* Assets.xcassets */; };
 		187F96A226219E7300E606A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187F96A126219E7300E606A6 /* Preview Assets.xcassets */; };
+		187F96AC2621A1AE00E606A6 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96AB2621A1AE00E606A6 /* Brewery.swift */; };
+		187F96B02621A27300E606A6 /* BreweriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96AF2621A27300E606A6 /* BreweriesView.swift */; };
+		187F96B42621A2E800E606A6 /* BreweryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96B32621A2E800E606A6 /* BreweryView.swift */; };
+		187F96B72621A4DF00E606A6 /* BreweriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96B62621A4DF00E606A6 /* BreweriesViewModel.swift */; };
+		187F96C02621AEB200E606A6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96BF2621AEB200E606A6 /* Person.swift */; };
+		187F96C32621B2E200E606A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F96C22621B2E200E606A6 /* User.swift */; };
+		18B28D4A2621FF2100C1F284 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D492621FF2100C1F284 /* UserService.swift */; };
+		18B28D552622000100C1F284 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D542622000100C1F284 /* UserEndpoint.swift */; };
+		18B28D59262201A900C1F284 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D58262201A900C1F284 /* APIError.swift */; };
+		18B28D5E2622168F00C1F284 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D5D2622168F00C1F284 /* ResultState.swift */; };
+		18B28D612622176E00C1F284 /* UsersViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D602622176E00C1F284 /* UsersViewmodel.swift */; };
+		18B28D6526221BBD00C1F284 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 18B28D6426221BBD00C1F284 /* URLImage */; };
+		18B28D6826221C2B00C1F284 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B28D6726221C2B00C1F284 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +33,18 @@
 		187F969E26219E7300E606A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187F96A126219E7300E606A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		187F96A326219E7300E606A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187F96AB2621A1AE00E606A6 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		187F96AF2621A27300E606A6 /* BreweriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesView.swift; sourceTree = "<group>"; };
+		187F96B32621A2E800E606A6 /* BreweryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryView.swift; sourceTree = "<group>"; };
+		187F96B62621A4DF00E606A6 /* BreweriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesViewModel.swift; sourceTree = "<group>"; };
+		187F96BF2621AEB200E606A6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		187F96C22621B2E200E606A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		18B28D492621FF2100C1F284 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		18B28D542622000100C1F284 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		18B28D58262201A900C1F284 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		18B28D5D2622168F00C1F284 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		18B28D602622176E00C1F284 /* UsersViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewmodel.swift; sourceTree = "<group>"; };
+		18B28D6726221C2B00C1F284 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B28D6526221BBD00C1F284 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +78,19 @@
 		187F969926219E7100E606A6 /* paws */ = {
 			isa = PBXGroup;
 			children = (
+				18B28D5C2622167800C1F284 /* State */,
+				18B28D572622019A00C1F284 /* Error */,
+				18B28D4D2621FFA500C1F284 /* Endpoint */,
+				18B28D482621FF0300C1F284 /* Service */,
+				187F96AE2621A24C00E606A6 /* Views */,
+				187F96AA2621A19800E606A6 /* Model */,
 				187F969A26219E7100E606A6 /* pawsApp.swift */,
 				187F969C26219E7100E606A6 /* ContentView.swift */,
 				187F969E26219E7300E606A6 /* Assets.xcassets */,
 				187F96A326219E7300E606A6 /* Info.plist */,
 				187F96A026219E7300E606A6 /* Preview Content */,
+				187F96B62621A4DF00E606A6 /* BreweriesViewModel.swift */,
+				18B28D602622176E00C1F284 /* UsersViewmodel.swift */,
 			);
 			path = paws;
 			sourceTree = "<group>";
@@ -67,6 +101,58 @@
 				187F96A126219E7300E606A6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		187F96AA2621A19800E606A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				187F96AB2621A1AE00E606A6 /* Brewery.swift */,
+				187F96BF2621AEB200E606A6 /* Person.swift */,
+				187F96C22621B2E200E606A6 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		187F96AE2621A24C00E606A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				187F96AF2621A27300E606A6 /* BreweriesView.swift */,
+				187F96B32621A2E800E606A6 /* BreweryView.swift */,
+				18B28D6726221C2B00C1F284 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18B28D482621FF0300C1F284 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D492621FF2100C1F284 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		18B28D4D2621FFA500C1F284 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D542622000100C1F284 /* UserEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		18B28D572622019A00C1F284 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D58262201A900C1F284 /* APIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		18B28D5C2622167800C1F284 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				18B28D5D2622168F00C1F284 /* ResultState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +171,9 @@
 			dependencies = (
 			);
 			name = paws;
+			packageProductDependencies = (
+				18B28D6426221BBD00C1F284 /* URLImage */,
+			);
 			productName = paws;
 			productReference = 187F969726219E7100E606A6 /* paws.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +201,9 @@
 				Base,
 			);
 			mainGroup = 187F968E26219E7100E606A6;
+			packageReferences = (
+				18B28D6326221BBD00C1F284 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 187F969826219E7100E606A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +231,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				187F969D26219E7100E606A6 /* ContentView.swift in Sources */,
+				187F96B02621A27300E606A6 /* BreweriesView.swift in Sources */,
+				18B28D4A2621FF2100C1F284 /* UserService.swift in Sources */,
+				187F96AC2621A1AE00E606A6 /* Brewery.swift in Sources */,
+				187F96B72621A4DF00E606A6 /* BreweriesViewModel.swift in Sources */,
+				18B28D552622000100C1F284 /* UserEndpoint.swift in Sources */,
+				187F96C32621B2E200E606A6 /* User.swift in Sources */,
+				187F96C02621AEB200E606A6 /* Person.swift in Sources */,
+				18B28D5E2622168F00C1F284 /* ResultState.swift in Sources */,
 				187F969B26219E7100E606A6 /* pawsApp.swift in Sources */,
+				187F96B42621A2E800E606A6 /* BreweryView.swift in Sources */,
+				18B28D6826221C2B00C1F284 /* ErrorView.swift in Sources */,
+				18B28D59262201A900C1F284 /* APIError.swift in Sources */,
+				18B28D612622176E00C1F284 /* UsersViewmodel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18B28D6326221BBD00C1F284 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18B28D6426221BBD00C1F284 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18B28D6326221BBD00C1F284 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 187F968F26219E7100E606A6 /* Project object */;
 }
